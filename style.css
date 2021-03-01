@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa%7CPoiret+One%7CRaleway%7CUbuntu+Mono&display=swap');
-.welcome {
-    background-image: url(./pics/h_img.jpg);
-    height: 1071px;
-    width: 1920px;
-}
+
 h4 {
     color: white;
     text-align: center;
@@ -14,12 +10,7 @@ h4 {
     text-align: center;
     
 }
-.services {
-    background-image: url(./pics/s_image.jpg);
-    height: 488px;
-    width: 1920px;
-    
-}
+
 .small-overlay {
     text-decoration-color: white;
 }
@@ -33,14 +24,7 @@ h5 {
     color: white;
     font-size: 3mm;
 }
-.contacts {
-    background-image: url(./pics/c_image.jpg);
-    height: 683px;
-    width: 1920px;
-}
-. {
-    opacity: 0;
-}
+
 .contact-overlay {
     background-color: rgba(0, 0, 0, 0.7);
 }
