@@ -1,15 +1,3 @@
-// $(document).ready(()=>{
-   // let myForm = $("#myForm")
-//function validate(){
-   // let name = $('#name').val();
-    //let email = $('#email').val();
-  //  let message= $('#message').val();
-
-    //if {name =="" || email =='' || message ==''}
-      //  alert{'Error! All fields must be filled'}
-       // return false
-}
-})
 $(function () {
     let desp = $("#desp");
     let devp = $("#devp");
@@ -63,5 +51,23 @@ $(function () {
         $(protext).animate({
             fontweight: "normal", fontsize: "16px"
         })
+        $(".port").hover(function() {
+            $(".porttext", this).slideToggle("slow");
+        }),  function(){
+            $(".porttext", this).slideToggle("slow");
+        });
     });
+    $("form#form").on("cubmit", function(event){
+        event.preventDefault();
+        let name = $("input#name").val();
+        let email = $("input#email").val();
+        let message = $("textarea#message").val();
+
+        if ($("input#name").val() && $("input#email").val()){
+            alert ("Hey " + name + ", Thank you for filling in your details, we will reach out to you");
+        }
+        else {
+            alert("Please enter your correct details");
+        }
+    })
 })
